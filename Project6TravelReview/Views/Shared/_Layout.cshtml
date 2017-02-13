@@ -8,8 +8,9 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    
     <div class="page-header">
-        <h1>Lavelle's Travel Guide <small>Current Reviews of the Hottest Destinantions</small></h1>
+        <h1 class="header-text"> Lavelle's Travel Guide <small class="logo">Current Reviews of the Hottest Destinations</small></h1>
     </div>
     <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -26,24 +27,28 @@
                 <ul class="nav navbar-nav">
                     <li><a href="http://localhost:53859/Reviews">Reviews</a></li>
                     <li><a href="http://localhost:53859/Cities">Cities</a></li>
-                    <li><a href="http://localhost:53859/Cities/Index">Index</a></li>
-
+                    <li><a href="http://localhost:53859/Reviews/Create">Create</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="container-fluid" id="backing">
 
-     <div class="container body-content">
-      @RenderBody()
+        <div class="container body-content">
+            @RenderBody()
 
-      @{
-             ViewBag.Title = "Index";
-       }
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - All Rights Reserved Lavelle Brown Inc.</p>
-        </footer>
-    </div>
+            @{
+                ViewBag.Title = "Index";
+            }
+            <hr />
+        </div>
+            <div class="footer">
+                <footer>
+                    <p class="footer-text" >&copy; @DateTime.Now.Year - All Rights Reserved Lavelle's Travel Guide, Inc.</p>
+                </footer>
+            </div>
+        </div>
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

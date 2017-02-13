@@ -22,6 +22,40 @@ select,
 textarea {
     max-width: 280px;
 }
-.page-header{
-    background-color:lavender;
+.page-header {
+    text-decoration-color: lightcoral;
+    height: 200px;
+    background: url('../images/Luxury-vacation-rental-Dencarik-Pantai_48.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
+.footer{
+    font: 200;
+}
+/*Changed footer color*/
+.footer-text{
+    color: black;
+}
+.navbar-header{
+    color: #7767AB;
+   
+}
+#backing {
+    background-color: lavender;
+    
+}
+.thumbnail{
+    background-color: lavender;
+}
+.header-text{
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    color: black;
+    font-style: oblique;
+}
+.caption{
+    text-decoration-color: white;
+}
+
